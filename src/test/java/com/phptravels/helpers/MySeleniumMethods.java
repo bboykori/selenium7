@@ -107,11 +107,11 @@ public class MySeleniumMethods {
             DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd_HH-mm-ss.SSS");
             LocalDateTime now = LocalDateTime.now();
             String formattedNow = dtf.format(now);
-            Path detinationPath = Paths.get("src/test/resources/screenshots/"+formattedNow+".png");
+            Path detinationPath = Paths.get("src/test/resources/reports/"+formattedNow+".png");
             Files.copy(screenshot.toPath(),detinationPath );
           //  System.out.println("Method takeScreenShotForReport: Screenshot "+formattedNow+".png created.");
             log.info("Method takeScreenShotForReport: Screenshot "+formattedNow+".png created.");
-            return detinationPath.toFile().getAbsolutePath();
+            return formattedNow+".png";
 
         } catch (IOException e) {
             log.error("Method takeScreenShotForReport: Nie znaleziono pliku");
