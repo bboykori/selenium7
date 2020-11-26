@@ -3,6 +3,7 @@ package com.phptravels.drivers;
 import com.phptravels.exceptions.NoSuchDriverException;
 import com.phptravels.tests.BaseSeleniumTest;
 import org.apache.log4j.Logger;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeDriverService;
@@ -30,7 +31,9 @@ public class DriverFactory {
 
 
 
-            driverInstance.get().manage().window().maximize();
+           // driverInstance.get().manage().window().maximize();
+            Dimension dimension = new Dimension(1920,1080);
+            driverInstance.get().manage().window().setSize(dimension);
         }
 
 
