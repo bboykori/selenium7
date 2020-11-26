@@ -58,6 +58,7 @@ public class SearchHotelTest extends BaseSeleniumTest {
         Assert.assertEquals(hotelPricesResult.get(0),price1);
         Assert.assertEquals(hotelPricesResult.get(1),price2);
         Assert.assertEquals(hotelPricesResult.get(2),price3);
+
 //        System.out.println("dane z Excela:");
 //        System.out.println(daneZExcela.length);
 //        for (int y=1;y<daneZExcela[0].length;y++){

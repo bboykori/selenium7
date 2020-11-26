@@ -32,8 +32,8 @@ public class ResultPage extends BaseSeleniumTest {
 
     public List<String> getHotelNames (){
         log.info("Checking hotel names");
-        MySeleniumMethods.waitForWebElementBy(By.xpath("//h4//b"),10,driver);
-        List<WebElement> hotelNames = resultTable.findElements(By.xpath("//h4//b"));
+        MySeleniumMethods.waitForWebElementBy(By.xpath(".//h4//b"),10,driver);
+        List<WebElement> hotelNames = resultTable.findElements(By.xpath(".//h4//b"));
         List<String> hotelNamesString = new ArrayList<String>();
         for (WebElement hotelName:hotelNames
         ) {
