@@ -31,9 +31,9 @@ public class DriverFactory {
 
 
 
-           // driverInstance.get().manage().window().maximize();
-            Dimension dimension = new Dimension(1920,1080);
-            driverInstance.get().manage().window().setSize(dimension);
+            driverInstance.get().manage().window().maximize();
+           // Dimension dimension = new Dimension(1024,653);
+           // driverInstance.get().manage().window().setSize(dimension);
         }
 
 
