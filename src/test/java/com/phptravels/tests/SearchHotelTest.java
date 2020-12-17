@@ -72,7 +72,7 @@ public class SearchHotelTest extends BaseSeleniumTest {
     public Object[][] getData() {
         Object[][] data = null;
         try {
-            data = MyExcelReader.myExcelReaderForDataProvider("Z:\\Dane.xlsx",true);
+            data = MyExcelReader.myExcelReaderForDataProvider("src\\test\\resources\\Dane.xlsx",true);
         } catch (IOException e) {
             e.printStackTrace();
         }
